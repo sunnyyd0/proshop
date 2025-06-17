@@ -1,4 +1,4 @@
-import { Row, Col, Spinner } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import { useGetProductsQuery } from "../slices/productSlice";
 import Product from "../components/Product";
@@ -7,6 +7,7 @@ import Message from "../components/Message";
 
 const HomeScreen = () => {
   const { data: products, isLoading, error } = useGetProductsQuery();
+
   return (
     <>
       <h1>Latest Products</h1>
