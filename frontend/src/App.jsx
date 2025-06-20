@@ -4,10 +4,11 @@ import Footer from "./components/Footer";
 import { Container } from "react-bootstrap";
 import HomeScreen from "./screens/HomeScreen";
 import { Outlet } from "react-router-dom";
-
+import { ToastContainer } from "react-toastify";
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Header />
       <main className="py-3">
         <Container>
